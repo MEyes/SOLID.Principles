@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Place Your Order</h1>
+
+@using (Html.BeginForm("ProcessOrder","Home",FormMethod.Post))
+{
+    <select name="paymentmode">
+        <option value="card">Credit Card</option>
+        <option value="cod">Cash On Delivery</option>
+    </select>
+    <input type="submit" value="Place Order" />
+}
+

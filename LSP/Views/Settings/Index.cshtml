@@ -1,0 +1,29 @@
+﻿@model Dictionary<LSP.Core.IReadableSettings, Dictionary<string, string>>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>All Settings</h1>
+
+@using (Html.BeginForm("Save"))
+{
+    <input type="submit" value="Change Settings" />
+}
+
+<table border="1" cellpadding="10">
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Key.ToString()</td>
+            <td>
+                @foreach (var subItem in item.Value)
+                {
+                    <div>@subItem.Key = @subItem.Value</div>
+                }
+            </td>
+        </tr>
+    }
+</table>
+
+
+

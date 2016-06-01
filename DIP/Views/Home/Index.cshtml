@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Change Password</h1>
+@using (Html.BeginForm("ChangePassword","Home",FormMethod.Post))
+{
+    <h4>Send notifications by :</h4>
+    <select name="notificationtype">
+        <option value="email">Email</option>
+        <option value="sms">SMS</option>
+        <option value="popup">Popup</option>
+    </select>
+    <input type="submit" value="Change Password" />
+}
+

@@ -1,0 +1,32 @@
+﻿@model List<SRP.Models.Customer>
+@{
+    ViewBag.Title = "Search";
+}
+<h1>Search Results</h1>
+@using (Html.BeginForm("Export","Customer",FormMethod.Post))
+{
+    <input type="hidden" value="@ViewBag.Criteria" name="criteria"/>
+    <input type="hidden" value="@ViewBag.SearchBy" name="searchBy"/>
+    <input type="submit" value="Export"/>
+}
+
+<br/>
+<table border="1" cellpadding="5">
+    <tr>
+        <th>Id</th>
+        <th>Country</th>
+        <th>Company Name</th>
+        <th>Contact Name</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CustomerID</td>
+            <td>@item.Country</td>
+            <td>@item.CompanyName</td>
+            <td>@item.ContactName</td>
+        </tr>
+    }
+</table>
+<br />
+<a href="@Url.Action("Index")">Back to search</a>

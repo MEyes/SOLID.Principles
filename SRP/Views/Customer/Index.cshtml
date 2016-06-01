@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Search", "Customer", FormMethod.Post))
+{
+    <br/>
+    <label for="criteria">Search Criteria :</label>
+    <input name="criteria" />
+    <label for="searchby">Search By :</label>
+    <select name="searchby">
+        <option value="country">Country</option>
+        <option value="companyName">Company Name</option>
+        <option value="contactName">Contact Name</option>
+    </select>
+    <input type="submit" value="Search" />
+}

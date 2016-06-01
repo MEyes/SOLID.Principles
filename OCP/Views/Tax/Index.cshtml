@@ -1,0 +1,49 @@
+﻿@model OCP.Models.IncomeDetails
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Tax Calculator</h1>
+@using (Html.BeginForm("Index","Tax",FormMethod.Post))
+{
+    <table cellpadding="5">
+        <tr>
+            <td>
+                @Html.LabelFor(model=>model.TotalIncome)
+            </td>
+            <td>
+                @Html.EditorFor(model=>model.TotalIncome)
+            </td>
+        </tr>
+        <tr>
+            <td>
+               @Html.LabelFor(model=>model.TotalDeduction)
+            </td>
+            <td>
+                @Html.EditorFor(model=>model.TotalDeduction)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="Country">Country :</label>
+            </td>
+            <td>
+                <select name="Country">
+                    <option value="USA" @(Model!=null && Model.Country=="USA"?"Selected":"")>United States</option>
+                    <option value="UK"  @(Model!=null && Model.Country=="UK" ?"Selected":"")>United Kingdom</option>
+                    <option value="IN"  @(Model!=null && Model.Country=="IN" ?"Selected":"")>India</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Calculate Tax"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Total Tax : @ViewBag.TotalTax</strong>
+            </td>
+        </tr>
+    </table>
+}

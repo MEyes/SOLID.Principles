@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OCP.Core.TaxCalculator">
+    <Position X="0.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\TaxCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCP.Core.CountryTaxCalculator">
+    <Position X="3.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAIAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Core\CountryTaxCalculator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCP.Core.TaxCalculatorForIndia" Collapsed="true">
+    <Position X="3.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\TaxCalculatorForIndia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCP.Core.TaxCalculatorForUK" Collapsed="true">
+    <Position X="5.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\TaxCalculatorForUK.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OCP.Core.TaxCalculatorForUS" Collapsed="true">
+    <Position X="1.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\TaxCalculatorForUS.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
